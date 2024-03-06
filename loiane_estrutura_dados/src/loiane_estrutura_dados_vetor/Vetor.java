@@ -10,6 +10,7 @@ public class Vetor {
 	
 	public Vetor(int capacidade) {
 		this.elementos = new String[capacidade];
+		this.tamanho = 0;
 	}
 	
 	//aula 03
@@ -23,12 +24,15 @@ public class Vetor {
 		}
 	}*/
 	
-	//código mais eficiente
+	//código mais eficiente - vendo qual foi o último elemento do vetor
 	public void adiciona(String elemento) {
-		//verificando se o tamanho é menor que a capacidade do vetor elementos
 		
+		//verificando se o tamanho é menor que a capacidade do vetor elementos
 		if (this.tamanho < this.elementos.length) {
 			this.elementos[this.tamanho] = elemento;
+			this.tamanho++;
+		}else {
+			
 		}
 		
 		
